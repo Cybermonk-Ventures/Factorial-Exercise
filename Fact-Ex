@@ -1,0 +1,13 @@
+var multArray = [];
+
+function factorialize(num) {
+  for(var i = 1; i<=num; i++){
+    multArray.push([i]);
+  }
+  num = multArray.reduce(function(prevVal, curVal){
+    return prevVal*curVal;
+  });
+  return num;
+}
+
+factorialize(5);
